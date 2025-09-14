@@ -1,0 +1,25 @@
+    # Byte-code files
+    *.pyc
+    __pycache__/
+    SRBS/backend/__pycache__/
+
+    # Virtual environment
+    venv/
+    env/
+
+    # Editor backup files
+    *~
+    *.bak
+    *.swp
+    .idea/
+    .vscode/
+
+    # Operating System files
+    .DS_Store
+    Thumbs.db
+
+    # Secret files and environment variables
+    .env
+    config.ini
+    *.key
+    *.pem

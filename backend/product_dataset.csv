@@ -1,0 +1,101 @@
+product_id,product_name,category,price,gst_rate,stock_quantity
+1,Veg Biryani,Food,1654.45,12,258
+2,Coffee,Beverages,327.59,12,467
+3,Burger,Snacks,668.66,5,176
+4,Laptop Charger,Electronics,181.61,18,371
+5,Belt,Accessories,154.89,12,415
+6,Masala Dosa,Food,367.78,18,253
+7,Lassi,Beverages,1552.88,12,445
+8,Vada Pav,Snacks,1903.43,12,193
+9,USB Cable,Electronics,1271.28,12,95
+10,Sunglasses,Accessories,391.96,18,58
+11,Poori Bhaji,Food,79.46,18,73
+12,Mineral Water,Beverages,931.47,18,270
+13,Chips,Snacks,1820.47,18,227
+14,Laptop Charger,Electronics,556.78,18,378
+15,Belt,Accessories,473.28,18,413
+16,Fried Rice,Food,466.98,12,435
+17,Coffee,Beverages,414.56,18,212
+18,Burger,Snacks,1286.17,18,236
+19,Wireless Mouse,Electronics,1393.11,18,460
+20,Shoes,Accessories,1802.81,18,104
+21,Fried Rice,Food,1683.26,12,297
+22,Sprite,Beverages,770.26,5,346
+23,Pani Puri,Snacks,1032.07,5,92
+24,Bluetooth Speaker,Electronics,1622.67,18,361
+25,Keychain,Accessories,55.56,5,17
+26,Fish Fry,Food,1864.52,5,123
+27,Lassi,Beverages,121.63,5,68
+28,French Fries,Snacks,166.13,18,238
+29,Headphones,Electronics,1140.05,18,54
+30,Cap,Accessories,222.95,18,328
+31,Veg Biryani,Food,926.33,12,376
+32,Lassi,Beverages,1166.9,5,382
+33,Pizza Slice,Snacks,332.36,5,100
+34,Headphones,Electronics,707.6,5,479
+35,Shoes,Accessories,194.28,12,497
+36,Fish Fry,Food,885.65,18,213
+37,Mango Shake,Beverages,1408.15,18,414
+38,Vada Pav,Snacks,1882.62,5,385
+39,Mobile Cover,Electronics,1258.84,12,28
+40,Sunglasses,Accessories,708.82,5,414
+41,Idli (2 pcs),Food,199.94,5,486
+42,Orange Juice,Beverages,1204.29,5,297
+43,Vada Pav,Snacks,1136.56,18,218
+44,Mobile Cover,Electronics,1354.52,5,213
+45,Shoes,Accessories,537.47,18,24
+46,Paneer Butter Masala,Food,1592.07,5,333
+47,Mango Shake,Beverages,785.84,12,189
+48,Bhel Puri,Snacks,20.1,5,228
+49,Laptop Charger,Electronics,988.23,18,395
+50,Watch,Accessories,1213.67,18,389
+51,Paneer Butter Masala,Food,1821.67,5,173
+52,Pepsi,Beverages,1064.85,18,269
+53,Burger,Snacks,919.97,5,312
+54,Keyboard,Electronics,1837.63,5,235
+55,Keychain,Accessories,1908.22,5,182
+56,Idli (2 pcs),Food,1027.85,5,479
+57,Orange Juice,Beverages,572.11,5,317
+58,Sandwich,Snacks,166.09,12,145
+59,Headphones,Electronics,375.18,18,93
+60,Keychain,Accessories,1070.01,12,61
+61,Chicken Curry,Food,1596.49,5,182
+62,Mango Shake,Beverages,594.34,5,399
+63,Sandwich,Snacks,1661.98,18,74
+64,Keyboard,Electronics,1111.9,18,448
+65,Sunglasses,Accessories,909.59,18,135
+66,Masala Dosa,Food,1855.17,12,367
+67,Coca Cola (500ml),Beverages,1177.13,5,135
+68,Pizza Slice,Snacks,1946.06,5,125
+69,Smart Watch,Electronics,984.01,5,42
+70,Shoes,Accessories,983.02,5,359
+71,Idli (2 pcs),Food,384.97,12,445
+72,Coffee,Beverages,1036.77,5,423
+73,Samosa,Snacks,1547.9,12,492
+74,Mobile Cover,Electronics,1524.4,5,325
+75,Sunglasses,Accessories,1392.79,18,70
+76,Idli (2 pcs),Food,656.69,18,58
+77,Coca Cola (500ml),Beverages,567.15,12,167
+78,Bhel Puri,Snacks,864.9,12,60
+79,Laptop Charger,Electronics,1597.39,12,352
+80,Shoes,Accessories,1674.34,18,175
+81,Veg Biryani,Food,20.24,5,96
+82,Pepsi,Beverages,473.09,18,144
+83,Vada Pav,Snacks,198.19,18,349
+84,Power Bank,Electronics,25.27,18,104
+85,Bag,Accessories,1816.49,18,143
+86,Fish Fry,Food,436.06,18,54
+87,Coffee,Beverages,1013.07,18,63
+88,Burger,Snacks,226.94,18,355
+89,Laptop Charger,Electronics,1530.29,12,496
+90,Cap,Accessories,1974.75,5,296
+91,Pav Bhaji,Food,1114.55,18,281
+92,Cold Coffee,Beverages,438.95,12,163
+93,French Fries,Snacks,674.18,5,336
+94,Laptop Charger,Electronics,1272.54,12,482
+95,Scarf,Accessories,427.46,12,435
+96,Fish Fry,Food,624.3,18,54
+97,Pepsi,Beverages,597.49,12,180
+98,Samosa,Snacks,1110.8,12,31
+99,Power Bank,Electronics,970.87,12,234
+100,Watch,Accessories,1201.6,18,19

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Speech Billing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="language-selection-page">
+    <div class="app-container">
+        <header class="app-header">
+            <i class="fas fa-microphone-alt header-icon"></i>
+            <h1>Multi-Language Speech Billing</h1>
+            <p class="tagline">Voice-powered billing system with support for English, Hindi, Kannada & Malayalam</p>
+        </header>
+
+        <div class="main-content">
+            <div class="card">
+                <h2>Select Language</h2>
+                <div class="language-selector-section">
+                    <label for="language-select">Select Language / ಭಾಷೆ ಆಯ್ದುಕೊಳ್ಳಿ:</label>
+                    <select id="language-select">
+                        <option value="en-US">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="kn">Kannada</option>
+                        <option value="ml">Malayalam</option>
+                        <!-- Add other language options if backend supports them -->
+                    </select>
+                </div>
+                <button id="startBilling" class="action-button start-listening-button">Start Billing</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

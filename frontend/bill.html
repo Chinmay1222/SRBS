@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill - Multi-Language Speech Billing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bill-page">
+    <div class="app-container">
+        <header class="app-header">
+            <i class="fas fa-microphone-alt header-icon"></i>
+            <h1>Multi-Language Speech Billing</h1>
+            <p class="tagline">Voice-powered billing system with support for English, Hindi, Kannada & Malayalam</p>
+        </header>
+
+        <div class="main-content">
+            <div class="left-panel card">
+                <button id="startRecognition" class="action-button start-listening-button">
+                    <i class="fas fa-microphone"></i> Start Listening
+                </button>
+                
+                <div id="statusMessage" class="status-message success-message">
+                    <div class="message-container">
+                        <span class="status-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="status-text">Speech recognition supported. Ready to start!</span>
+                    </div>
+                </div>
+                
+                <p id="systemFeedback" class="system-feedback"></p>
+                <p id="speechOutput" class="speech-output-text">Transcription: "No speech detected."</p>
+
+                <div id="processingAnimation" class="processing-animation" style="display: none;">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+
+                <div class="voice-commands-examples card example-commands">
+                    <h3><i class="fas fa-lightbulb"></i> Voice Commands Examples:</h3>
+                    <ul>
+                        <li>"Add rice fifty rupees"</li>
+                        <li>"Add dal hundred rupees"</li>
+                        <li>"Show total"</li>
+                        <li>"Clear bill"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="current-bill-section card">
+                    <h2><i class="fas fa-file-invoice"></i> Current Bill</h2>
+                    <ul id="itemList" class="bill-items">
+                        <li>No items added yet. Use voice commands to add items.</li>
+                    </ul>
+                </div>
+
+                <div class="total-amount-section card total-display">
+                    <h3>Total Amount</h3>
+                    <p class="total-value">₹<span id="totalAmount">0</span></p>
+                    <button id="clearBill" class="action-button clear-all-button">
+                        <i class="fas fa-times-circle"></i> Clear All Items
+                    </button>
+                </div>
+
+                <button id="generateReceipt" class="action-button generate-receipt-button">
+                    <i class="fas fa-receipt"></i> Generate Receipt
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

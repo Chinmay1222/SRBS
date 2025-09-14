@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Receipt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="receipt-page" style="font-family: 'Noto Sans Kannada', sans-serif;">
+  <div class="app-container receipt-container">
+    <header class="restaurant-header">
+      <h1><span data-lang="en">Restaurant Receipt</span> <span data-lang="kn" style="display: none;">ರೆಸ್ಟೋರೆಂಟ್ ರಸೀದಿ</span></h1>
+      <p class="restaurant-logo-text"><span data-lang="en">Restaurant Logo</span> <span data-lang="kn" style="display: none;">ರೆಸ್ಟೋರೆಂಟ್ ಲೋಗೋ</span></p>
+      <p class="restaurant-name"><span data-lang="en">Delicacies From the Oven</span> <span data-lang="kn" style="display: none;">ಓವನ್ ನಿಂದ ಸವಿಯಾದ ತಿನಿಸುಗಳು</span></p>
+      <p class="restaurant-address"><span data-lang="en">104 Main Street, Hudson Ville, SF 90845</span> <span data-lang="kn" style="display: none;">104 ಮುಖ್ಯ ರಸ್ತೆ, ಹಡ್ಸನ್ ವಿಲ್ಲೆ, SF 90845</span></p>
+      <p class="restaurant-contact">📞 +91-9876543210 | ✉️ info@delicacies.com | 🌐 www.delicacies.com</p>
+      <p class="restaurant-tagline"><span data-lang="en">Authentic Italian Food At Its Finest!</span> <span data-lang="kn" style="display: none;">ಅತ್ಯುತ್ತಮ ಇಟಾಲಿಯನ್ ಆಹಾರ!</span></p>
+      <div class="language-switcher">
+        <label for="language-select"><span data-lang="en">Select Language:</span> <span data-lang="kn" style="display: none;">ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ:</span></label>
+        <select id="language-select">
+          <option value="en"><span data-lang="en">English</span> <span data-lang="kn" style="display: none;">ಇಂಗ್ಲಿಷ್</span></option>
+          <option value="kn"><span data-lang="en">Kannada</span> <span data-lang="kn" style="display: none;">ಕನ್ನಡ</span></option>
+        </select>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="receipt-details">
+        <p>
+          <span class="receipt-info-group"><span data-lang="en">Receipt No.:</span> <span data-lang="kn" style="display: none;">ರಸೀದಿ ಸಂಖ್ಯೆ:</span> <span id="receiptId">REC_001</span></span>
+          <span class="receipt-info-group"><span data-lang="en">Date:</span> <span data-lang="kn" style="display: none;">ದಿನಾಂಕ:</span> <span id="receiptDate"></span></span>
+          <span class="receipt-info-group"><span data-lang="en">Time:</span> <span data-lang="kn" style="display: none;">ಸಮಯ:</span> <span id="receiptTime"></span></span>
+        </p>
+      </section>
+
+      <table class="receipt-items-table">
+        <thead>
+          <tr>
+            <th scope="col"><span data-lang="en">List of Items</span> <span data-lang="kn" style="display: none;">ವಸ್ತುಗಳ ಪಟ್ಟಿ</span></th>
+            <th scope="col"><span data-lang="en">Quantity</span> <span data-lang="kn" style="display: none;">ಪ್ರಮಾಣ</span></th>
+            <th scope="col"><span data-lang="en">Unit Cost (₹)</span> <span data-lang="kn" style="display: none;">ಘಟಕ ವೆಚ್ಚ (₹)</span></th>
+            <th scope="col"><span data-lang="en">Amount (₹)</span> <span data-lang="kn" style="display: none;">ಮೊತ್ತ (₹)</span></th>
+          </tr>
+        </thead>
+        <tbody id="receiptItems">
+          <!-- Items will be injected by JS -->
+        </tbody>
+      </table>
+
+      <section class="summary-details">
+        <p><span data-lang="en">Total Amount:</span> <span data-lang="kn" style="display: none;">ಒಟ್ಟು ಮೊತ್ತ:</span> ₹<span id="receiptTotalAmountBeforeTax">0.00</span></p>
+        <p><span class="vat-label"><span data-lang="en">Total Tax:</span> <span data-lang="kn" style="display: none;">ಒಟ್ಟು ತೆರಿಗೆ:</span></span> ₹<span id="receiptTax">0.00</span></p>
+        <div class="dashed-line"></div>
+        <p><span data-lang="en">Net Amount:</span> <span data-lang="kn" style="display: none;">ನಿವ್ವಳ ಮೊತ್ತ:</span> ₹<span id="receiptTotal">0.00</span></p>
+      </section>
+
+      <section class="additional-info">
+        <p><span data-lang="en">Eat As Much As You Like!</span> <span data-lang="kn" style="display: none;">ನಿಮಗೆ ಇಷ್ಟವಾದಷ್ಟು ತಿನ್ನಿರಿ!</span></p>
+        <div class="sunday-buffet">
+          <h3><span data-lang="en">Sunday Buffet:</span> <span data-lang="kn" style="display: none;">ಭಾನುವಾರದ ಬುಫೆ:</span></h3>
+          <p><span data-lang="en">Adults:</span> <span data-lang="kn" style="display: none;">ವಯಸ್ಕರು:</span> ₹<span id="sundayBuffetAdults">850</span></p>
+          <p><span data-lang="en">Children under 12:</span> <span data-lang="kn" style="display: none;">12 ವರ್ಷದೊಳಗಿನ ಮಕ್ಕಳು:</span> ₹<span id="sundayBuffetChildren">500</span></p>
+        </div>
+      </section>
+
+      <div class="button-group">
+        <button id="newBill" class="action-button new-bill-button" aria-label="Start a new bill">
+          <i class="fas fa-plus-circle"></i> <span data-lang="en">Start New Bill</span> <span data-lang="kn" style="display: none;">ಹೊಸ ಬಿಲ್ ಪ್ರಾರಂಭಿಸಿ</span>
+        </button>
+        <button id="makePayment" class="action-button make-payment-button" aria-label="Make a payment">
+          <i class="fas fa-money-bill-wave"></i> <span data-lang="en">Make Payment</span> <span data-lang="kn" style="display: none;">ಪಾವತಿ ಮಾಡಿ</span>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

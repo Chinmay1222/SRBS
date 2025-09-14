@@ -1,0 +1,100 @@
+.payment-page {
+    background-color: var(--primary-bg); /* Use primary-bg from style.css */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Use Poppins for consistency */
+    color: var(--text-color); /* Use text-color from style.css */
+}
+
+.payment-container {
+    background-color: var(--card-bg); /* Use card-bg for container */
+    border-radius: 15px; /* Added border-radius */
+    box-shadow: var(--shadow); /* Added shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px; /* Increased padding */
+    max-width: 450px; /* Slightly wider */
+    width: 90%; /* Responsive width */
+    text-align: center;
+}
+
+.payment-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.phonepe-logo {
+    width: 50px; /* Slightly larger logo */
+    height: 50px;
+    margin-right: 15px; /* Increased margin */
+}
+
+.phonepe-text {
+    font-size: 2.5em; /* Larger text */
+    font-weight: 600;
+    color: var(--button-secondary); /* Use button-secondary for purple accent */
+}
+
+.payment-accepted-here {
+    color: var(--button-secondary); /* Use button-secondary for purple accent */
+    font-size: 1.3em; /* Slightly larger text */
+    font-weight: 500; /* Slightly lighter weight */
+    margin-bottom: 15px; /* Increased margin */
+}
+
+.payment-scan-pay-text {
+    font-size: 1.1em; /* Slightly larger text */
+    color: var(--light-text-color); /* Use light-text-color */
+    margin-bottom: 40px; /* Increased margin */
+}
+
+.qr-code-container {
+    background-color: var(--dark-text); /* Use dark-text (white) for QR code background */
+    padding: 20px; /* Increased padding */
+    border-radius: 12px; /* More rounded corners */
+    margin-bottom: 40px; /* Increased margin */
+    box-shadow: var(--card-shadow); /* Added subtle shadow */
+}
+
+.qr-code-image {
+    width: 280px; /* Slightly larger QR code */
+    height: 280px;
+    display: block;
+}
+
+.payment-merchant-name {
+    font-size: 1.5em; /* Larger text */
+    font-weight: 700; /* Bolder text */
+    margin-bottom: 60px; /* Increased margin */
+    color: var(--text-color); /* Use text-color */
+}
+
+.payment-copyright {
+    font-size: 0.9em; /* Slightly larger text */
+    color: var(--light-text-color); /* Use light-text-color */
+    line-height: 1.6; /* Slightly increased line height */
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 30px 15px;
+        max-width: 90%;
+    }
+
+    .phonepe-text {
+        font-size: 2em;
+    }
+
+    .qr-code-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
